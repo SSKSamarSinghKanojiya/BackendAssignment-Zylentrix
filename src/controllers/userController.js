@@ -38,6 +38,12 @@ exports.getUserById = async (req, res) => {
   try {
     const { id } = req.params;
 
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      return res
+        .status(404)
+        .json({ success: false, message: "User not found" });
+    }
+
     const user = await User.findById(id);
     res
       .status(201)
@@ -54,6 +60,12 @@ exports.updateUserById = async (req, res) => {
     const { id } = req.params;
     const updateData = req.body;
 
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      return res
+        .status(404)
+        .json({ success: false, message: "User not found" });
+    }
+
     const user = await User.findByIdAndUpdate(id, updateData, { new: true });
 
     res
@@ -69,6 +81,13 @@ exports.updateUserById = async (req, res) => {
 exports.deleteUserById = async (req, res) => {
   try {
     const { id } = req.params;
+
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      return res
+        .status(404)
+        .json({ success: false, message: "User not found" });
+    }
+    
     await User.findByIdAndDelete(id);
     res
       .status(200)
