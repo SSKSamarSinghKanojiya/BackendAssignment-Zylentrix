@@ -62,6 +62,7 @@ npm start
 
 - Endpoint: `POST /user`
 - Request Body
+
 ```
 {
 
@@ -72,7 +73,9 @@ npm start
 }
 
 ```
+
 - Response:
+
 ```
 {
     "success": true,
@@ -88,8 +91,10 @@ npm start
 ```
 
 2. Retrieve All Users
+
 - Endpoint: GET /user
-- Response: 
+- Response:
+
 ```
 {
     "success": true,
@@ -107,8 +112,10 @@ npm start
 ```
 
 3. Retrieve a Single User by ID
+
 - Endpoint: GET /user/:id
-- Response: 
+- Response:
+
 ```
 {
     "success": true,
@@ -124,8 +131,10 @@ npm start
 ```
 
 4. Update a User
+
 - Endpoint: PUT /user/:id
 - Request Body:
+
 ```
 {
     "name":"Samar Update",
@@ -133,7 +142,9 @@ npm start
     "age":15
 }
 ```
+
 - Response:
+
 ```
 {
     "success": true,
@@ -149,9 +160,11 @@ npm start
 ```
 
 5. Delete a User
+
 - Endpoint: DELETE /user/:id
 
 - Response:
+
 ```
 {
     "success": true,
@@ -159,9 +172,10 @@ npm start
 }
 ```
 
-
 `Error Handling`
+
 - Invalid Input
+
 ```
 {
   "error": "Invalid user data"
@@ -169,22 +183,22 @@ npm start
 ```
 
 - User Not Found:
+
 ```
 {
   "error": "User not found"
 }
 ```
 
-
-
 `Testing the API`
+
 - You can test the API using Postman
 - Use the provided endpoints to send requests and verify responses.
 
-
 `License`
+
 - This project is open-source and free to use.
 
-
 `Contact`
-- For any issues or improvements, feel free to reach out or contribute to the repository..
+
+- For any issues or improvements, feel free to reach out or contribute to the repository.
