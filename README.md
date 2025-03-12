@@ -169,4 +169,4 @@ npm start
 
 
 `Contact`
-- For any issues or improvements, feel free to reach out or contribute to the repository.
+- For any issues or improvements, feel free to reach out or contribute to the repository..
