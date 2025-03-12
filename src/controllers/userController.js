@@ -6,7 +6,7 @@ exports.createUser = async (req, res) => {
     const { name, email, age } = req.body;
 
     if (!name || !email || !age) {
-      return res.status(400).json({ error: "Name, email, and age required" });
+      return res.status(400).json({ error: "Invalid user data" });
     }
     const user = new User({ name, email, age });
 
@@ -87,7 +87,7 @@ exports.deleteUserById = async (req, res) => {
         .status(404)
         .json({ success: false, message: "User not found" });
     }
-    
+
     await User.findByIdAndDelete(id);
     res
       .status(200)
