@@ -158,3 +158,15 @@ npm start
     "message": "User Delete Successfully "
 }
 ```
+
+`Testing the API`
+- You can test the API using Postman
+- Use the provided endpoints to send requests and verify responses.
+
+
+`License`
+- This project is open-source and free to use.
+
+
+`Contact`
+- For any issues or improvements, feel free to reach out or contribute to the repository.
