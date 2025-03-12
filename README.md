@@ -55,3 +55,26 @@ npm install
 ```
 npm start
 ```
+
+3. The API will be running at http://localhost:3000
+
+
+`API Endpoints`
+
+1. Create a User
+- Endpoint: `POST /user`
+- Request Body '
+```
+{
+    "success": true,
+    "message": "Create User Successfully",
+    "user": {
+        "name": "poonam",
+        "email": "poonam@gmail.com",
+        "age": 25,
+        "_id": "67d18f0d5f56c9eb83adbedd",
+        "__v": 0
+    }
+}
+
+```
