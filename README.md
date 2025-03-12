@@ -159,6 +159,24 @@ npm start
 }
 ```
 
+
+`Error Handling`
+- Invalid Input
+```
+{
+  "error": "Invalid user data"
+}
+```
+
+- User Not Found:
+```
+{
+  "error": "User not found"
+}
+```
+
+
+
 `Testing the API`
 - You can test the API using Postman
 - Use the provided endpoints to send requests and verify responses.
